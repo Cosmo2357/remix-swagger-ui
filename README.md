@@ -5,7 +5,7 @@ RemixでSwagger UIを表示するサンプルです。
 
 ログインページ。書いてるアドレスとパスワードでログインできる。ログアウト？😆    
 多分GoogleOauthでバックエンドにメールアドレスハードコーディングかenvでいれるかな。  
-S3のかわりにWASABIでもつかおっかな。    
+S3のかわりにWASABIでもつかおっかな。クラウド破産はもう嫌。    
 https://remix-swagger-ui.onrender.com/login  
 
 無料インスタンスだから、かなりのコールドスタート。  
