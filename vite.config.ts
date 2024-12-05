@@ -9,6 +9,14 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ["crypto"], // cryptoを外部モジュールとして扱う
+    },
+  },
+  optimizeDeps: {
+    exclude: ["crypto"], // cryptoを依存関係から除外
+  },
   plugins: [
     remix({
       future: {

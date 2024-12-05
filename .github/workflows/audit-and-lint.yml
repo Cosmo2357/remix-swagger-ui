@@ -1,0 +1,36 @@
+name: Audit and Lint
+
+on:
+  push:                # プッシュ時に実行
+    branches:
+      - main           # メインブランチへのプッシュ
+  pull_request:         # プルリクエスト時にも実行
+
+jobs:
+  audit-and-lint:
+    name: Run npm audit and lint
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリをチェックアウト
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Node.jsをセットアップ
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # 必要なNode.jsのバージョンを指定
+
+      # npm依存関係をインストール
+      - name: Install dependencies
+        run: npm ci
+
+      # npm auditの実行
+      - name: Run npm audit
+        run: npm audit --production --audit-level=high
+        # 必要に応じて --audit-level の値を変更 (low, moderate, high, critical)
+
+      # lintの実行
+      - name: Run lint
+        run: npm run lint
