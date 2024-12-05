@@ -2,7 +2,12 @@
 
 RemixでSwagger UIを表示するサンプルです。
 まだ作りかけ。
-aaa
+
+ログインページ。書いてるアドレスとパスワードでログインできる。
+https://remix-swagger-ui.onrender.com/login
+
+無料インスタンスだから、かなりのコールドスタート。
+
 <img width="768" alt="スクリーンショット 2024-12-05 23 57 42" src="https://github.com/user-attachments/assets/340933f0-77cb-4b14-9eac-1308ddd19b05">
 
 ![alt text](readmeAssets/login.png)
