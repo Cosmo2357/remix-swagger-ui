@@ -1,4 +1,10 @@
-# Welcome to Remix!
+# Welcome to Remix! Swagger UI
+
+RemixでSwagger UIを表示するサンプルです。
+まだ作りかけ。
+
+![alt text](readmeAssets/login.png)
+![alt text](readmeAssets/swagger.png)
 
 - 📖 [Remix docs](https://remix.run/docs)
 
