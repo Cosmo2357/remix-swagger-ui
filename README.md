@@ -103,3 +103,12 @@ company-access-control/
 # Basic Github Actions Check
 ![Swagger UI](readmeAssets/actions.png)   
 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Feel free to submit issues, fork the repository and send pull requests!
+
