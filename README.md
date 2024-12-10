@@ -1,4 +1,4 @@
-# Company Access Control App (In Progress)
+# Company Access Control Swagger UI (In Progress)
 
 This application is designed for **authenticated users** (via company IP-based access control or Google OAuth) to view and interact with **Swagger documentation** stored in a file storage system. 
 
@@ -8,11 +8,11 @@ This application is designed for **authenticated users** (via company IP-based a
 
 ## Features (Planned and Implemented)
 
-- **IP-Based Authentication**: Only users from whitelisted IP addresses can access the app without additional authentication.
-- **Google OAuth Authentication**: Non-whitelisted IPs require login using a Google account that is pre-approved.
+### **IP-Based Authentication**: Only users from whitelisted IP addresses can access the app without additional authentication.
+###  **Google OAuth Authentication**: Non-whitelisted IPs require login using a Google account that is pre-approved.
 ![Google Login](readmeAssets/googleLogIn.png)   
 
-- **Swagger UI Integration**: The app will display Swagger documentation from a file storage system (logic not yet implemented).
+### **Swagger UI Integration**: The app will display Swagger documentation from a file storage system (logic not yet implemented).
 ![Swagger UI](readmeAssets/swagger.png)   
 
 ---
@@ -85,4 +85,7 @@ company-access-control/
 ├── tailwind.config.js               # Tailwind CSS configuration
 ├── package.json                     # Dependencies and scripts
 ```
+
+# Basic Github Actions Check
+![Swagger UI](readmeAssets/actions.png)   
 
