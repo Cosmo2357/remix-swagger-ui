@@ -25,7 +25,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   const {
     ALLOWED_IPS,
     GOOGLE_CLIENT_ID,
-    ALLOWED_EMAILS,
+    //ALLOWED_EMAILS,
     USE_GOOGLE_AUTH,
     GOOGLE_JWKS_URL,
   } = CONFIG;

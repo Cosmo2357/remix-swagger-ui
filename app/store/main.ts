@@ -27,6 +27,7 @@ interface PersistStore {
 export const usePersistStore = create<PersistStore>()(
   devtools(
     persist(
+      /* eslint-disable @typescript-eslint/no-unused-vars */
       (set) => ({
         googleAccessToken: 'ya29a0AfH6SMBJ1Q',
       }),
@@ -42,6 +43,7 @@ interface mainStore {
 }
 export const useMainStore = create<mainStore>()(
   devtools(
+    /* eslint-disable @typescript-eslint/no-unused-vars */
       (set) => ({
         isLoggedIn: false,
 
