@@ -9,6 +9,11 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      crypto: 'crypto-browserify'
+    }
+  },
   build: {
     rollupOptions: {
       external: ["crypto"], // cryptoを外部モジュールとして扱う
