@@ -1,4 +1,4 @@
-# Company Access Control Swagger UI (In Progress)
+# Swagger UI Access Control with IP and Google OAuth
 
 This app enables authenticated users, via company IP control or Google OAuth, to view and interact with Swagger documentation stored in file storage.
 
