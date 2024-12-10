@@ -4,20 +4,28 @@ This app enables authenticated users, via company IP control or Google OAuth, to
 
 By setting up your backend development process to automatically generate Swagger files on each repository push and deploy them to file storage, this app provides seamless access to the latest API specifications. This ensures that the most up-to-date documentation is always available for quick review and testing without manual updates. Additionally, access control features make it ideal for secure use in collaborative projects between companies.
 
-このアプリは、会社のIP制御やGoogle OAuthを利用して認証されたユーザーが、ファイルストレージに保存されたSwaggerドキュメントを閲覧・操作できるものです。
-バックエンドの開発プロセスにおいて、リポジトリへのPUSH時にSwaggerファイルを自動生成し、ファイルストレージに保存しておくことで、このアプリから常に最新のAPI仕様書に簡単にアクセスできます。この仕組みにより、迅速な確認やテストが可能になります。また、アクセス制御機能により、会社間の共同開発でも安全に利用できます。
+This application is a **work in progress** 
+<details>
+  <summary>日本語の説明</summary>
+  
+  このアプリは、会社のIP制御やGoogle OAuthを利用して認証されたユーザーが、ファイルストレージに保存されたSwaggerドキュメントを閲覧・操作できるものです。  
+  バックエンドの開発プロセスにおいて、リポジトリへのPUSH時にSwaggerファイルを自動生成し、ファイルストレージに保存しておくことで、このアプリから常に最新のAPI仕様書に簡単にアクセスできます。  
+  この仕組みにより、迅速な確認やテストが可能になります。また、アクセス制御機能により、会社間の共同開発でも安全に利用できます。
+  
+</details>
 
-**Note**: The logic for fetching Swagger files from the file storage system has not been implemented yet. This application is a **work in progress** and is subject to further testing and refinement.
+
+
 
 ---
 
-## Features (Planned and 90% Implemented)
+## Features
 
 - **IP-Based Authentication**: Only users from whitelisted IP addresses can access the app without additional authentication.
 - **Google OAuth Authentication**: Non-whitelisted IPs require login using a Google account that is pre-approved.
 ![Google Login](readmeAssets/googleLogIn.png)   
 
-- **Swagger UI Integration**: The app will display Swagger documentation from a file storage system (logic not yet implemented).
+- **Swagger UI Integration**: The app will display Swagger documentation from a file storage system.
 ![Swagger UI](readmeAssets/swagger.png)   
 
 ---
@@ -54,6 +62,7 @@ GOOGLE_JWKS_URL=https://www.googleapis.com/oauth2/v3/certs
 USE_GOOGLE_AUTH=true
 ALLOWED_IPS=127.0.0.1,192.168.1.1
 ALLOWED_EMAILS=your-email1@example.com,your-email2@example.com
+SWAGGER_URL=your-swagger-url
 ```
 
 4. Start the development server:

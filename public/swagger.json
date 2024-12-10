@@ -3,15 +3,160 @@
   "info": {
     "title": "Sample API",
     "version": "1.0.0",
-    "description": "This is a sample API documentation."
+    "description": "This is a sample API documentation with multiple endpoints and HTTP methods."
   },
   "paths": {
     "/example": {
       "get": {
-        "summary": "Example endpoint",
+        "summary": "Retrieve example data",
+        "description": "Fetch a list of examples from the server.",
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Successful response with a list of examples.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Sample Name"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new example",
+        "description": "Add a new example to the server.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "New Example"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Example created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 2
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "New Example"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/example/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer"
+          },
+          "description": "ID of the example"
+        }
+      ],
+      "get": {
+        "summary": "Get a specific example",
+        "description": "Fetch a single example by ID.",
+        "responses": {
+          "200": {
+            "description": "Successful response with the example data.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Sample Name"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Example not found."
+          }
+        }
+      },
+      "put": {
+        "summary": "Update an existing example",
+        "description": "Modify the details of an existing example by ID.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Updated Name"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Example updated successfully."
+          },
+          "404": {
+            "description": "Example not found."
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete an example",
+        "description": "Remove an example by ID.",
+        "responses": {
+          "204": {
+            "description": "Example deleted successfully."
+          },
+          "404": {
+            "description": "Example not found."
           }
         }
       }
