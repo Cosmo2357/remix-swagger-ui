@@ -1,6 +1,11 @@
 # Company Access Control Swagger UI (In Progress)
 
-This application is designed for **authenticated users** (via company IP-based access control or Google OAuth) to view and interact with **Swagger documentation** stored in a file storage system. 
+This app enables authenticated users, via company IP control or Google OAuth, to view and interact with Swagger documentation stored in file storage.
+
+By setting up your backend development process to automatically generate Swagger files on each repository push and deploy them to file storage, this app provides seamless access to the latest API specifications. This ensures that the most up-to-date documentation is always available for quick review and testing without manual updates. Additionally, access control features make it ideal for secure use in collaborative projects between companies.
+
+このアプリは、会社のIP制御やGoogle OAuthを利用して認証されたユーザーが、ファイルストレージに保存されたSwaggerドキュメントを閲覧・操作できるものです。
+バックエンドの開発プロセスにおいて、リポジトリへのPUSH時にSwaggerファイルを自動生成し、ファイルストレージに保存しておくことで、このアプリから常に最新のAPI仕様書に簡単にアクセスできます。この仕組みにより、迅速な確認やテストが可能になります。また、アクセス制御機能により、会社間の共同開発でも安全に利用できます。
 
 **Note**: The logic for fetching Swagger files from the file storage system has not been implemented yet. This application is a **work in progress** and is subject to further testing and refinement.
 
