@@ -5,6 +5,20 @@
     "version": "1.0.0",
     "description": "This is a sample API documentation with multiple endpoints and HTTP methods."
   },
+  "servers": [
+    {
+      "url": "https://api.example.com/v1",
+      "description": "Production Server"
+    },
+    {
+      "url": "https://staging-api.example.com/v1",
+      "description": "Staging Server"
+    },
+    {
+      "url": "http://localhost:3000",
+      "description": "Local Development Server"
+    }
+  ],
   "paths": {
     "/example": {
       "get": {
