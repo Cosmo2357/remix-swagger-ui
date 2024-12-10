@@ -6,13 +6,13 @@ This application is designed for **authenticated users** (via company IP-based a
 
 ---
 
-## Features (Planned and Implemented)
+## Features (Planned and 90% Implemented)
 
-### **IP-Based Authentication**: Only users from whitelisted IP addresses can access the app without additional authentication.
-###  **Google OAuth Authentication**: Non-whitelisted IPs require login using a Google account that is pre-approved.
+- **IP-Based Authentication**: Only users from whitelisted IP addresses can access the app without additional authentication.
+- **Google OAuth Authentication**: Non-whitelisted IPs require login using a Google account that is pre-approved.
 ![Google Login](readmeAssets/googleLogIn.png)   
 
-### **Swagger UI Integration**: The app will display Swagger documentation from a file storage system (logic not yet implemented).
+- **Swagger UI Integration**: The app will display Swagger documentation from a file storage system (logic not yet implemented).
 ![Swagger UI](readmeAssets/swagger.png)   
 
 ---
@@ -32,8 +32,8 @@ This application is designed for **authenticated users** (via company IP-based a
 
 1. Clone the repository:
 ```bash
-git clone this-repo-url
-cd this-app-name
+git clone https://github.com/Cosmo2357/remix-swagger-ui.git
+cd remix-swagger-ui
 ```
 
 2. Install dependencies:
@@ -48,7 +48,7 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 GOOGLE_JWKS_URL=https://www.googleapis.com/oauth2/v3/certs
 USE_GOOGLE_AUTH=true
 ALLOWED_IPS=127.0.0.1,192.168.1.1
-ALLOWED_EMAILS=your-email@example.com
+ALLOWED_EMAILS=your-email1@example.com,your-email2@example.com
 ```
 
 4. Start the development server:
